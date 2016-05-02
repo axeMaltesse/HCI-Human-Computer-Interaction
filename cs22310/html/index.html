@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>cs22310</title>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+
+    <img class="centerIMG" src="../img/logo.png">
+
+    <div class="center">
+    <ul class="center">
+        <li><a href="about.html">About Us</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Plumbers</a>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="plumbers.html">Problems:</a>
+                <a href="heating.html">Heating</a>
+                <a href="household.html">House Hold</a>
+                <a href="drainagesystems.html">Drainage System</a>
+            </div>
+        </li>
+        <li><a href="contact.html">Contact Us</a> </li>
+        <li><a href="login.html">Log In</a> </li>
+    </ul>
+    </div>
+    <script>
+        /* When the user clicks on the button,
+         toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(e) {
+            if (!e.target.matches('.dropbtn')) {
+
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var d = 0; d < dropdowns.length; d++) {
+                    var openDropdown = dropdowns[d];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <div id="box" class="center">
+
+        <div id="text_in_box">
+            <h3>English below:</h3>
+            <p>We all know how difficult it is to get a good plumber when we need one, especially in Ceredigion!
+            So a collective of local plumbers have got together to offer their services from one central web
+            site.</p>
+            <p>Ceredigion Plumbers Collective (CPC) has around a dozen plumbers. These plumbers
+            have different skills — from central heating systems through general household plumbing to
+            domestic and agricultural scale drainage systems.</p>
+
+            <p>To contact directly with plumber go to the navigation bar on top, click on Plumbers and choose from
+            their services skills!</p>
+
+            <h3>Welsh below:</h3>
+            <p> Rydym i gyd yn gwybod pa mor anodd yw hi i gael plymwr da pan fo angen un,
+                yn enwedig yng Ngheredigion! Felly casgliad o blymwyr lleol wedi dod at ei gilydd i
+                gynnig eu gwasanaethau o un wefan canolog. </p>
+            <p>Plymwyr Ceredigion Collective (CPC) Mae gan tua dwsin o plymwyr. Mae gan y plymwyr sgiliau
+            gwahanol - o systemau gwres canolog drwy plymio cartref cyffredinol i systemau draenio ar
+            raddfa domestig ac amaethyddol. </p>
+            <p> I gysylltu yn uniongyrchol gyda plymwr yn mynd i'r
+                bar llywio ar ben, cliciwch ar Plumbers a dewis
+                o blith eu gwasanaethau sgiliau! </p>
+        </div>
+
+        <div class="center">
+            <h3>For marking purposes only</h3>
+            <ul>
+                <li><a href="adminPage.html">Admin Page</a> </li>
+                <li><a href="PlumberPage.html">Plumber Page</a> </li>
+            </ul>
+        </div>
+
+        <img class="centerIMG" src="../img/klucz.jpg" id="klucz">
+
+    </div>
+
+    </body>
+</html>

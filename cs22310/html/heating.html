@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Central Heating Plumbers</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+
+<div class="center">
+    <ul class="center">
+        <li><a href="index.html">Home</a> </li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Plumbers</a>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="plumbers.html">Problems:</a>
+                <a href="heating.html">Heating</a>
+                <a href="household.html">House Hold</a>
+                <a href="drainagesystems.html">Drainage System</a>
+            </div>
+        </li>
+        <li><a href="contact.html">Contact Us</a> </li>
+        <li><a href="login.html">Log In</a> </li>
+    </ul>
+</div>
+
+<div id="box" class="center">
+    <h2>Plumbers:</h2>
+
+    <div id="text_in_box">
+
+        <div id="ProfilePage">
+            <div id="LeftCol">
+                <div id="Photo"><img src="http://www.atsplumbingcompany.com/wp-content/uploads/2014/04/plumber-okc-low-water-pressure.jpg"></div>
+                <div id="ProfileOptions">
+                    Profile picture
+                </div>
+            </div>
+
+            <div id="Info">
+                <p>
+                    <strong>Name:</strong>
+                    <span>James</span>
+                </p>
+                <p>
+                    <strong>Surname:</strong>
+                    <span>Brown</span>
+                </p>
+                <p>
+                    <strong>Available:</strong>
+                    <span>Every working days: 8am-4pm</span>
+                </p>
+                <p>
+                    <strong>Skills:</strong>
+            <span>follow technical drawings, practical skills, problem solving skills,
+            an awareness of safety issues and legal regulations</span>
+                </p>
+                <p>
+                    <strong>Contact:</strong>
+                    <span>james@heatingplumber.com</span>
+                </p>
+            </div>
+
+            <!-- Needed because other elements inside ProfilePage have floats -->
+            <div style="clear:both"></div>
+        </div>
+
+        <a href="hire.html" class="button">Hire Plumber</a>
+
+        <h3>OR</h3>
+
+        <div align="center">
+
+            <form>
+                <header>Contact via CPC for more information</header>
+                <label>Email <span>*</span></label>
+                <input/>
+                <div class="help">We need your email to reply for your message</div>
+                <label>Message <span>*</span></label>
+                <textarea cols="50" rows="10" name="message"></textarea>
+                <div class="help">Your message</div>
+                <button>Send</button>
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    /**
+     * Created by luw19 on 30/03/2016.
+     */
+    /* When the user clicks on the button,
+     toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var d = 0; d < dropdowns.length; d++) {
+                var openDropdown = dropdowns[d];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

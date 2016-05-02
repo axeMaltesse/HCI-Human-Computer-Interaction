@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Plumber Page</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<img class="centerIMG" src="../img/plumbers.png">
+
+<div class="center">
+    <ul class="center">
+        <li><a href="index.html">Home</a> </li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Plumbers</a>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="plumbers.html">Problems:</a>
+                <a href="heating.html">Heating</a>
+                <a href="household.html">House Hold</a>
+                <a href="drainagesystems.html">Drainage System</a>
+            </div>
+        </li>
+        <li><a href="contact.html">Contact Us</a> </li>
+        <li><a href="login.html">Log In</a> </li>
+    </ul>
+</div>
+
+<div id="box" class="center">
+
+    <div id="text_in_box">
+        This is a prototype of plumber page. For marking purposes only
+
+        <div class="center">
+            <ul>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn" onclick="profileFunction()">Profile</a>
+                <div class="dropdown-content" id="profileDropdown">
+                    <a href="#">Change Details</a>
+                    <a href="#">Change Profile Photo</a>
+                    <a href="#">Add/Remove skills</a>
+                    <a href="#">Edit Contact Details</a>
+                </div>
+                </li>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn" onclick="jobFunction()">Jobs</a>
+                <div class="dropdown-content" id="jobDropdown">
+                    <a href="#">Job List</a>
+                    <a href="#">Requests</a>
+                    <a href="#">Abandoned</a>
+                </div>
+                </li>
+                <li class="dropdown"><a href="javascript:void(0)" class="dropbtn" onclick="msgFunction()">Messages</a>
+                <div class="dropdown-content" id="msgDropdown">
+                    <a href="#">New Message</a>
+                    <a href="#">Inbox</a>
+                    <a href="#">Bin</a>
+                </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    /**
+     * Created by luw19 on 30/03/2016.
+     */
+    /* When the user clicks on the button,
+     toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    function profileFunction() {
+        document.getElementById("profileDropdown").classList.toggle("show");
+    }
+
+    function jobFunction() {
+        document.getElementById("jobDropdown").classList.toggle("show");
+    }
+
+    function msgFunction() {
+        document.getElementById("msgDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var d = 0; d < dropdowns.length; d++) {
+                var openDropdown = dropdowns[d];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

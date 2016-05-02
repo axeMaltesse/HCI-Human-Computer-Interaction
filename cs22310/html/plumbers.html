@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Plumbers</title>
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+
+        <img class="centerIMG" src="../img/plumbers.png">
+
+        <div class="center">
+            <ul class="center">
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="about.html">About Us</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Plumbers</a>
+                    <div class="dropdown-content" id="myDropdown">
+                        <a href="plumbers.html">Problems:</a>
+                        <a href="heating.html">Heating</a>
+                        <a href="household.html">House Hold</a>
+                        <a href="drainagesystems.html">Drainage System</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a> </li>
+                <li><a href="login.html">Log In</a> </li>
+            </ul>
+        </div>
+
+        <div id="box" class="center">
+
+            <div id="text_in_box">
+                Now all you need to do is specify your problem!
+                <div>
+                    <ul id="menu_in_box">
+                        <li><a href="heating.html">Central Heating Problem</a> </li>
+                        <li><a href="household.html">General Household Problem</a> </li>
+                        <li><a href="drainagesystems.html">Drainage Systems Problem</a> </li>
+                    </ul>
+                </div>
+                When you choose your problem website will show you plumbers profiles with
+                accurate skills to fix your issue!
+
+                <img src="../img/jackson-nj-plumber-toilet-repairs.jpg" class="centerIMG" id="jackson">
+
+            </div>
+
+        </div>
+
+
+        <script>
+            /**
+             * Created by luw19 on 30/03/2016.
+             */
+            /* When the user clicks on the button,
+             toggle between hiding and showing the dropdown content */
+            function myFunction() {
+                document.getElementById("myDropdown").classList.toggle("show");
+            }
+
+            // Close the dropdown if the user clicks outside of it
+            window.onclick = function(e) {
+                if (!e.target.matches('.dropbtn')) {
+
+                    var dropdowns = document.getElementsByClassName("dropdown-content");
+                    for (var d = 0; d < dropdowns.length; d++) {
+                        var openDropdown = dropdowns[d];
+                        if (openDropdown.classList.contains('show')) {
+                            openDropdown.classList.remove('show');
+                        }
+                    }
+                }
+            }
+        </script>
+
+    </body>
+</html>

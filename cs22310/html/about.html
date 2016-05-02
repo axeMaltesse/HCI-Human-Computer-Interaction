@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<img class="centerIMG" src="../img/about.png">
+
+<div class="center">
+    <ul class="center">
+        <li><a href="index.html">Home</a> </li>
+      <!--  <li><a href="about.html">About Us</a></li> -->
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Plumbers</a>
+            <div class="dropdown-content" id="myDropdown">
+                <a href="plumbers.html">Problems:</a>
+                <a href="heating.html">Heating</a>
+                <a href="household.html">House Hold</a>
+                <a href="drainagesystems.html">Drainage System</a>
+            </div>
+        </li>
+        <li><a href="contact.html">Contact Us</a> </li>
+        <li><a href="login.html">Log In</a> </li>
+    </ul>
+</div>
+
+<div id="box">
+    <div id="text_in_box">
+        In Wales it is really hard to find accurate plumber with skills required to current job.
+        CPC – Ceredigion Plumbers Website provides a plumbers with skill on top of that branch.
+        Each plumber is been checked before adding to the page and having an account.
+        CPC Website team provides an easy access to the plumbers for various house problems and
+        giving an opportunity to save your precious time!
+    </div>
+</div>
+
+<div class="centerIMG" align="center">
+    <img src="../img/pani.jpg" width="500" height="500">
+</div>
+
+
+<script>
+    /**
+     * Created by luw19 on 30/03/2016.
+     */
+    /* When the user clicks on the button,
+     toggle between hiding and showing the dropdown content */
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var d = 0; d < dropdowns.length; d++) {
+                var openDropdown = dropdowns[d];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
+</body>
+</html>
